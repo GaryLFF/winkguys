@@ -78,4 +78,12 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: ftpsync
+  host: 121.199.47.192           #主机地址
+  user: hyu4425250001            #用户名
+  pass: asd987dd        #密码
+  remote: /htdocs       #上传到空间的指定目录。比如/public_html/。默认为/
+  port: 21          #端口，默认为21
+  ignore:        #忽略的文件
+  connections: 1  #使用的连接数，默认1
+  verbose: false   #显示调试信息，默认false
